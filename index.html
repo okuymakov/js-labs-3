@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="./index.html">
+                <h1>Фильмы</h1>
+            </a>
+        </header>
+        <main class="main">
+            <div class="flex">
+                <div class="search">
+                    <div class="search-filter">
+                        <form class="search-filter-form" action="">
+                            <p class="form-item"><label for="countries"> Страны </label> </br>
+                                <select class="countries" id="countries" name="countries" multiple></select>
+                            </p>
+                            <p class="form-item"><label for="genres"> Жанры </label> </br>
+                                <select class="genres" id="genres" name="genres" multiple></select>
+                            </p>
+                            <p class="form-item"><label for="years"> Годы </label> </br>
+                                <select class="years" id="years" name="years" multiple></select>
+                            </p>
+                            <button class="btn find form-item">Найти</button> </br>
+                            <button class="btn add form-item">Добавить</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="films-content">
+                    <div class="films flex">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-title">Добавление фильма</div>
+                <hr>
+                <form action="" class="form add-new-films-form">
+                    <div class="form-item">
+                        <label for="film-name">Название: </label>
+                        <input class="film-name-input" type="text" name="film-name">
+                    </div>
+                    <div class="form-item">
+                        <label for="film-country">Страна: </label>
+                        <input class="film-country-input" type="text" name="film-country">
+                    </div>
+                    <div class="form-item">
+                        <label for="film-genres">Жанры: </label>
+                        <div class="input-array flex flex-wrap input-genres">
+                            <input class="film-genres-input" type="text" name="film-genres">
+                        </div>
+                        <div class="flex">
+                            <button class="btn input-array-btn input-array-remove" data-for="input-genres">-</button>
+                            <button class="btn input-array-btn input-array-add" data-for="input-genres">+</button>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="film-directors">Режиссеры: </label>
+                        <div class="input-array flex flex-wrap input-directors">
+                            <input class="film-directors-input" type="text" name="film-directors">
+                        </div>
+                        <div class="flex">
+                            <button class="btn input-array-btn input-array-remove" data-for="input-directors">-</button>
+                            <button class="btn input-array-btn input-array-add" data-for="input-directors">+</button>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="film-scenario">Сценарий: </label>
+                        <div class="input-array flex flex-wrap input-scenario">
+                            <input class="film-scenario-input" type="text" name="film-scenario">
+                        </div>
+                        <div class="flex">
+                            <button class="btn input-array-btn input-array-remove" data-for="input-scenario">-</button>
+                            <button class="btn input-array-btn input-array-add" data-for="input-scenario">+</button>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="film-producers">Продюсеры: </label>
+                        <div class="input-array flex flex-wrap input-producers">
+                            <input class="film-producers-input" type="text" name="film-producers">
+                        </div>
+                        <div class="flex">
+                            <button class="btn input-array-btn input-array-remove" data-for="input-producers">-</button>
+                            <button class="btn input-array-btn input-array-add" data-for="input-producers">+</button>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="film-оperators">Операторы: </label>
+                        <div class="input-array flex flex-wrap input-оperators">
+                            <input class="film-оperators-input" type="text" name="film-оperators">
+                        </div>
+                        <div class="flex">
+                            <button class="btn input-array-btn input-array-remove" data-for="input-оperators">-</button>
+                            <button class="btn input-array-btn input-array-add" data-for="input-оperators">+</button>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="film-composers">Композиторы: </label>
+                        <div class="input-array flex flex-wrap input-composers">
+                            <input class="film-composers-input" type="text" name="film-composers">
+                        </div>
+                        <div class="flex">
+                            <button class="btn input-array-btn input-array-remove" data-for="input-composers">-</button>
+                            <button class="btn input-array-btn input-array-add" data-for="input-composers">+</button>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="film-budget">Бюджет($): </label>
+                        <input class="film-budget-input" type="number" min="0" name="film-budget">
+                    </div>
+                    <div class="form-item">
+                        <label for="film-boxOffice">Сборы в мире($): </label>
+                        <input class="film-boxOffice-input" type="number" min="0" name="film-boxOffice">
+                    </div>
+                    <div class="form-item">
+                        <label for="film-ageRate">Возраст: </label>
+                        <input class="film-ageRate-input" type="number" min="0" name="film-ageRate">
+                    </div>
+                    <div class="form-item">
+                        <label for="film-runtime">Время(мин): </label>
+                        <input class="film-runtime-input" type="number" min="0" name="film-runtime">
+                    </div>
+                    <div class="form-item">
+                        <label for="film-releaseDate">Дата выхода: </label>
+                        <input class="film-releaseDate-input" type="date" name="film-releaseDate">
+                    </div>
+                    <div class="form-item">
+                        <label for="film-src">Изображение(url): </label>
+                        <input class="film-src-input" type="text" name="film-src">
+                    </div>
+                    <div class="form-item">
+                        <button class="btn add-film" disabled>Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script type="module" src="./js/films.js"></script>
+    <script type="module" src="./js/films-add.js"></script>
+</body>
+
+</html>

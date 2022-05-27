@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/film-details-style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="./index.html">
+                <h1>Фильмы</h1>
+            </a>
+        </header>
+        <main class="main">
+            <div class="film-details">
+                <div class="film-details-content flex">
+                    <img src="" alt="" class="film-img">
+                    <div class="film-info flex flex-column justify-space-between">
+                        <div class="flex justify-space-between align-items-center">
+                            <h1 class="film-name"></h1>
+                            <div class="delete-film">Удалить фильм</div>
+                        </div>
+                        <div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Страна</div>
+                                <div class="film-info-value film-info-country"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Жанр</div>
+                                <div class="film-info-value film-info-genres"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Режиссер</div>
+                                <div class="film-info-value film-info-directors"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Сценарий</div>
+                                <div class="film-info-value film-info-scenario"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Продюсер</div>
+                                <div class="film-info-value film-info-producers"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Оператор</div>
+                                <div class="film-info-value film-info-оperators"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Композитор</div>
+                                <div class="film-info-value film-info-composers"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Бюджет</div>
+                                <div class="film-info-value film-info-budget"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Сборы в мире</div>
+                                <div class="film-info-value film-info-boxOffice"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Возраст</div>
+                                <div class="film-info-value film-info-ageRate"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Время</div>
+                                <div class="film-info-value film-info-runtime"></div>
+                            </div>
+                            <div class="film-info-item flex justify-space-between">
+                                <div class="film-info-title">Дата выхода</div>
+                                <div class="film-info-value film-info-releaseDate"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="film-reviews">
+                    <div class="film-reviews-title">Отзывы</div>
+                    <form action="" class="add-new-review-form">
+                        <div class="flex justify-space-between">
+                            <div class="form-item">
+                                <label for="review-name">Имя: </label>
+                                <input type="text" class="review-name-input" name="review-name">
+                            </div>
+                            <div class="form-item">
+                                <label for="review-role">Роль: </label>
+                                <input type="text" class="review-role-input" name="review-role">
+                            </div>
+                            <div class="form-item">
+                                <label for="review-rate">Рейтинг: </label>
+                                <select class="review-rate-input" name="review-rate"></select>
+                            </div>
+                        </div>
+                        <div class="form-item form-item-text">
+                            <label for="review-text">Текст: </label>
+                            <textarea class="review-text-input" name="review-text" rows="5"></textarea>
+                        </div>
+                        <div class="form-item">
+                            <button class="add-new-review btn" disabled>Написать отзыв</button>
+                        </div>
+
+                    </form>
+                    <div class="film-reviews-content"></div>
+                </div>
+            </div>
+    </div>
+    </main>
+
+    <script type="module" src="./js/film-details.js"></script>
+</body>
+
+</html>

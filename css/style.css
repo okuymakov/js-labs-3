@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    margin-top: 10px;
+}
+
+.header a {
+    color: white;
+}
+
+.container>* {
+    padding: 0 50px;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.btn {
+    padding: 4px 8px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+}
+
+.search-filter {
+    font-size: 18px;
+}
+
+select,
+.btn {
+    font-size: 16px;
+}
+
+.form-item {
+    margin: 10px;
+    width: 150px;
+}
+
+.add-new-films-form .form-item>* {
+    width: 100%;
+    margin: 8px;
+}
+
+.films-content {
+    padding: 0 90px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.film-card {
+    width: 200px;
+    margin-bottom: 40px;
+    margin-right:50px;
+}
+
+.film-card .img {
+    max-width: 100%;
+}
+
+.film-card .title {
+    text-align: center;
+    font-size: 16px;
+}
+
+/*addfilm*/
+.add-new-films-form input,
+.add-film.btn {
+    font-size: 24px;
+    padding: 10px 20px;
+}
+
+button:disabled {
+    opacity: 50%;
+}
+
+select {
+    width: 100%;
+}
+.add-new-films-form .form-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.add-new-films-form {
+    margin: 20px 30px;
+}
+
+.input-array-btn {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.input-array input {
+    max-width: 40%;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+.empty-film-list {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 24px;
+    opacity: 60%;
+}

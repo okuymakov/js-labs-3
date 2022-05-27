@@ -1,0 +1,93 @@
+.film-details {
+    margin-top: 40px;
+}
+.delete-film {
+    opacity: 70%;
+    cursor: pointer;
+}
+
+.film-info {
+    flex-grow: 1;
+    margin-left: 100px;
+}
+.film-img {
+    width: 300px;
+}
+
+.film-info-item {
+    margin-top: 8px;
+}
+.film-info-title {
+    font-size: 20px;
+}
+
+.film-info-value {
+    font-size: 18px;
+}
+
+.film-reviews {
+    margin-top: 40px;
+}
+
+.film-reviews-title {
+    font-size: 28px;
+}
+.add-new-review-form {
+    width: 50%;
+    margin-top: 30px;
+}
+.form-item {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.form-item-text {
+    width: 100%;
+}
+input,select {
+    max-width: 100%;
+}
+textarea {
+    width: 100%;
+}
+input,.btn, textarea,select {
+    padding: 8px 15px;
+    font-size: 18px;
+}
+.film-reviews-content {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    max-width: 100%;
+}
+
+.review {
+    font-size: 20px;
+    border: 2px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.review > * {
+    padding: 10px;
+}
+.review .left {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 2px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    flex-grow: 0.2;
+}
+
+.review-name {
+    
+}
+.review-role {
+    font-size: 18px;
+    opacity: 80%;
+    margin-bottom: 15px;
+}
+.review-rate {
+    font-size: 18px;
+}
+.review-text {
+
+}
